@@ -1,0 +1,49 @@
+
+  
+  li {
+    display: inline;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: grey;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+    
+  li a:hover {
+    background-color: black;
+  }
+
+  .rightli {
+      float: right;
+      margin-right: 50px;
+  }
+
+  .active{
+      background-color:green;
+  }
+
+  .active a:hover {
+    background-color:green;
+  }
+
+  .App-logo {
+    height: 5vmin;
+    pointer-events: none;
+  }
+  
