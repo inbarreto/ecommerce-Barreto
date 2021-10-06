@@ -1,8 +1,3 @@
-export const Title = () =>{
-return (
-<h1>
-    My Ecommerce App
-</h1>
-
-)    
-}
+export const Title = () => {
+  return <h1>My Ecommerce App</h1>;
+};
