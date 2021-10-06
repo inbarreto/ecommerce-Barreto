@@ -1,49 +1,46 @@
+li {
+  display: inline;
+}
 
-  
-  li {
-    display: inline;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: grey;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
-    background-color: grey;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color:white;
-    text-align: center;
-    padding: 15px 15px;
-    font-size: 25px;
-    text-decoration: none;
-  }
-    
-  li a:hover {
-    background-color: black;
-  }
+li {
+  float: left;
+}
 
-  .rightli {
-      float: right;
-      margin-right: 50px;
-  }
+li span {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
 
-  .active{
-      background-color:green;
-  }
+li span:hover {
+  background-color: black;
+}
 
-  .active a:hover {
-    background-color:green;
-  }
+.rightli {
+  float: right;
+  margin-right: 50px;
+}
 
-  .App-logo {
-    height: 5vmin;
-    pointer-events: none;
-  }
-  
+.active {
+  background-color: green;
+}
+
+.active a:hover {
+  background-color: green;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}

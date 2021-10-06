@@ -7,10 +7,10 @@ return (
     <div className ="NavBar">
 <ul>
  <li><img src={logo} className="App-logo" alt="logo" /> </li>
-  <li className="active"><a >Home</a></li>
-  <li><a >Novedades</a></li>
-  <li><a >Contacto</a></li>
-  <li className="rightli"><a >Login</a></li>
+  <li className="active"> <span> Home </span></li>
+  <li><span> Novedades </span></li>
+  <li><span> Contacto</span></li>
+  <li className="rightli">Login</li>
 </ul>
     </div>
 
