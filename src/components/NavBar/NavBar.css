@@ -44,3 +44,10 @@ li span:hover {
   height: 5vmin;
   pointer-events: none;
 }
+
+li h1 {
+  font-size: 25px;
+  color: white;
+  float: left;
+  padding-left: 500px;
+}

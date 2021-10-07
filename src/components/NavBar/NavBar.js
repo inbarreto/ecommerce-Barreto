@@ -1,5 +1,6 @@
 import "./NavBar.css";
 import logo from "./../../logo.svg";
+import { Title } from "./../../components/title/Title";
 
 export const NavBar = () => {
   return (
@@ -17,7 +18,12 @@ export const NavBar = () => {
         <li>
           <span> Contacto</span>
         </li>
-        <li className="rightli">Login</li>
+        <li className="rightli">
+          <span>Login</span>
+        </li>
+        <li>
+          <Title text="My E-Commerce app" />
+        </li>
       </ul>
     </div>
   );
