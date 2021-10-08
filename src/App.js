@@ -1,29 +1,36 @@
 import "./App.css";
-import { Title } from "./components/title/Title";
-import { NavBar } from "./components/NavBar/NavBar";
 
+import { NavBar } from "./components/NavBar/NavBar";
+import { useState } from "react";
+import { Title } from "./components/Title/Title";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 function App() {
   const alertName = () => alert("Yo");
+
+  const [title, setTitle] = useState("My E-commerce 2");
+
+  const handleTitle = () => setTitle("My e-Comm");
+
+  const [counter, setCounter] = useState(0);
+
+  const add = () => setCounter(counter + 1);
+  const rest = () => setCounter(counter - 1);
 
   return (
     <div className="App">
       <NavBar />
-      <header className="App-header">
+      <ItemListContainer />
+      {/* <header className="App-header">
         <p>
-          <Title text="My E-commerce App" />
+          <Title text={title} onTitle={handleTitle} />
           <Title text="From Ignacio" />
         </p>
 
         <button onClick={alertName}> click me</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React With Ignacio
-        </a>
-      </header>
+        <button onClick={add}> +</button>
+        <Title text={counter} />
+        <button onClick={rest}> -</button>
+      </header> */}
     </div>
   );
 }

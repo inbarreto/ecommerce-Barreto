@@ -30,6 +30,11 @@ li span:hover {
 .rightli {
   float: right;
   margin-right: 50px;
+  width: 120px;
+}
+
+.rightli span:hover {
+  background-color: grey;
 }
 
 .active {
@@ -50,4 +55,14 @@ li h1 {
   color: white;
   float: left;
   padding-left: 500px;
+}
+
+li h3 {
+  color: white;
+  width: 150px;
+  height: auto;
+  bottom: 0px;
+  top: 0px;
+  left: 850px;
+  position: absolute;
 }

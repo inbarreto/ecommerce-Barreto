@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import logo from "./../../logo.svg";
-import { Title } from "./../../components/title/Title";
+import { CartWidget } from "./../../components/CartWidget/CartWIdget";
 
 export const NavBar = () => {
   return (
@@ -18,11 +18,12 @@ export const NavBar = () => {
         <li>
           <span> Contacto</span>
         </li>
-        <li className="rightli">
-          <span>Login</span>
-        </li>
         <li>
-          <Title text="My E-Commerce app" />
+          <h3>My E-Commerce</h3>
+        </li>
+
+        <li className="rightli">
+          <CartWidget text="5" />
         </li>
       </ul>
     </div>
