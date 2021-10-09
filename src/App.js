@@ -1,8 +1,8 @@
 import "./App.css";
 
 import { NavBar } from "./components/NavBar/NavBar";
-import { useState } from "react";
-import { Title } from "./components/Title/Title";
+// import { useState } from "react";
+// import { Title } from "./components/Title/Title";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 function App() {
   // const alertName = () => alert("Yo");
