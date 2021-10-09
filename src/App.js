@@ -5,21 +5,21 @@ import { useState } from "react";
 import { Title } from "./components/Title/Title";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 function App() {
-  const alertName = () => alert("Yo");
+  // const alertName = () => alert("Yo");
 
-  const [title, setTitle] = useState("My E-commerce 2");
+  // const [title, setTitle] = useState("My E-commerce 2");
 
-  const handleTitle = () => setTitle("My e-Comm");
+  // const handleTitle = () => setTitle("My e-Comm");
 
-  const [counter, setCounter] = useState(0);
+  // const [counter, setCounter] = useState(0);
 
-  const add = () => setCounter(counter + 1);
-  const rest = () => setCounter(counter - 1);
+  // const add = () => setCounter(counter + 1);
+  // const rest = () => setCounter(counter - 1);
 
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer greeting="Test Greeting"/>
       {/* <header className="App-header">
         <p>
           <Title text={title} onTitle={handleTitle} />
