@@ -1,0 +1,23 @@
+.itemProduct img {
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+
+.itemProduct {
+    width: 240px;
+    height:auto;
+    display: block;
+    text-align: center;
+    background-color: lightgray;
+
+}
+
+.itemProduct ul {
+    text-align: center;
+    background-color: lightgray;
+    
+}
+.itemProduct li {
+margin-top: 5px;
+}
