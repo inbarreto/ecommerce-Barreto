@@ -1,3 +1,4 @@
+import { ItemCount } from '../ItemCount/ItemCount';
 import './Item.css'
 
 export const Item = (props) => {
@@ -7,6 +8,10 @@ export const Item = (props) => {
             <span>{props.itemProduct.Item}</span>
             <span>  {props.itemProduct.Price} $</span>
             <span> {props.itemProduct.Description}</span>
+            <span>
+                <ItemCount name={props.itemProduct.Item} stock={props.itemProduct.Stock} />
+            </span>
         </span>
+
     );
 }
