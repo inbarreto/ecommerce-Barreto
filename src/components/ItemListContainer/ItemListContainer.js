@@ -11,7 +11,7 @@ export const ItemListContainer = (props) => {
     getData();
   }, [updatePants, updateShoes]);
 
-  async function getData() {
+  function getData() {
     const task = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve();
