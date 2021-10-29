@@ -1,8 +1,14 @@
 import "./ItemDetailContainer.css";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { useState, useEffect } from "react";
 
 export const ItemDetailContainer = (props) => {
   const [listPants, updatePants] = useState(null);
   const [listShoes, updateShoes] = useState(null);
+
+  useEffect(() => {
+    getItem();
+  }, [listPants, listShoes]);
 
   const getItem = () => {
     const task = new Promise((resolve, reject) => {
@@ -63,5 +69,9 @@ export const ItemDetailContainer = (props) => {
         console.log(listPants);
       });
   };
-  return <div></div>;
+  return (
+    <>
+      <ItemDetail itemProduct={listPants}> </ItemDetail>
+    </>
+  );
 };

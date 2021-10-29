@@ -79,7 +79,7 @@ export const ItemListContainer = (props) => {
       <ul>
         <ItemList itemProduct={listShoes} />
       </ul>
-      <ItemCount stock="5" name="Pantalon" initial="1" />
+      {/* <ItemCount stock="5" name="Pantalon" initial="1" /> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 // import { ItemCount } from "./components/ItemCount/ItemCount";
 //import { Title } from "./components/Title/Title";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 function App() {
   // const alertName = () => alert("Yo");
 
@@ -19,6 +20,9 @@ function App() {
           <div className="App">
             <ItemListContainer greeting="Test Greeting" />
           </div>
+        </Route>
+        <Route exact path="/Detail">
+          <ItemDetailContainer />
         </Route>
       </Switch>
     </BrowserRouter>
