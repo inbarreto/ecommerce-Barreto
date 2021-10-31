@@ -1,0 +1,33 @@
+.itemProduct img {
+    width:150px;
+    height:150px;
+    text-align: center;
+}
+
+.itemProduct {
+    width: 240px;
+    height:auto;
+    display: block;
+    text-align: center;
+    background-color: lightgray;
+
+}
+
+.itemProduct ul {
+    text-align: center;
+    background-color: lightgray;
+    
+}
+.itemProduct li {
+margin-top: 5px;
+}
+
+.itemProduct p 
+{
+    font-size: 15px;
+
+}
+
+.counter {
+    
+}

@@ -27,7 +27,7 @@ export const ItemCount = (props) => {
   return (
     <div className="itemName">
       <p>
-        {"Producto "}
+
         <b>{props.name} </b>
       </p>
       <p>

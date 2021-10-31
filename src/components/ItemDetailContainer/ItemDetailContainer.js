@@ -8,7 +8,7 @@ export const ItemDetailContainer = (props) => {
 
   useEffect(() => {
     getItem();
-  }, [listPants, listShoes]);
+  }, []);
 
   const getItem = () => {
     const task = new Promise((resolve, reject) => {
@@ -62,16 +62,17 @@ export const ItemDetailContainer = (props) => {
             },
           ]);
         },
-        (err) => {}
+        (err) => { }
       )
-      .catch((err) => {})
+      .catch((err) => { })
       .finally((err) => {
-        console.log(listPants);
+
       });
   };
+
   return (
     <>
-      <ItemDetail itemProduct={listPants}> </ItemDetail>
+      <ItemDetail itemProduct={listPants != null ? listPants[0] : null}> </ItemDetail>
     </>
   );
 };
