@@ -56,10 +56,15 @@ li h1 {
 
 li h3 {
   color: white;
-  width: 150px;
+
   height: auto;
   bottom: 0px;
   top: 0px;
   left: 850px;
   position: absolute;
+  width: 30%;
+
+  margin: auto;
+  display: block;
+  text-align: center;
 }

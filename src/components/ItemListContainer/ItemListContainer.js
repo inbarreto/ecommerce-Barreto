@@ -1,4 +1,3 @@
-import { ItemCount } from "../ItemCount/ItemCount";
 import { ItemList } from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 import { useState, useEffect } from "react";
@@ -65,9 +64,7 @@ export const ItemListContainer = (props) => {
         (err) => {}
       )
       .catch((err) => {})
-      .finally((err) => {
-        console.log(listPants);
-      });
+      .finally((err) => {});
   }
 
   return (
@@ -79,7 +76,6 @@ export const ItemListContainer = (props) => {
       <ul>
         <ItemList itemProduct={listShoes} />
       </ul>
-      {/* <ItemCount stock="5" name="Pantalon" initial="1" /> */}
     </div>
   );
 };

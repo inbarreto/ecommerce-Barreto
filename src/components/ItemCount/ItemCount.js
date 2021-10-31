@@ -5,15 +5,11 @@ export const ItemCount = (props) => {
   const [itemsToAdd, setItemsToAdd] = useState(props.initial | 1);
   const [buttonAdd, changeButtonAdd] = useState(false);
   const [buttonRest, changeButtonRest] = useState(false);
-  useEffect(
-    () => {
-      console.log(counter + itemsToAdd);
-      changeButtonAdd(counter + itemsToAdd > props.stock ? true : false);
-      changeButtonRest(counter > 0 ? false : true);
-    },
-    [counter],
-    [itemsToAdd]
-  );
+  useEffect(() => {
+    console.log(counter + itemsToAdd);
+    changeButtonAdd(counter + itemsToAdd > props.stock ? true : false);
+    changeButtonRest(counter > 0 ? false : true);
+  }, [counter, itemsToAdd]);
 
   const add = () => {
     setCounter(counter + itemsToAdd);
@@ -27,7 +23,6 @@ export const ItemCount = (props) => {
   return (
     <div className="itemName">
       <p>
-
         <b>{props.name} </b>
       </p>
       <p>

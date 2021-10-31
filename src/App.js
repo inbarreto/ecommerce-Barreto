@@ -18,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div className="App">
-            <ItemListContainer greeting="Test Greeting" />
+            <ItemListContainer greeting="" />
           </div>
         </Route>
         <Route exact path="/Detail">

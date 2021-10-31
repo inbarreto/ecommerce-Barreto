@@ -1,33 +1,27 @@
-.itemProduct img {
-    width:150px;
-    height:150px;
-    text-align: center;
+.itemProductDetail img {
+  width: 250px;
+  height: 250px;
+  text-align: center;
 }
 
-.itemProduct {
-    width: 240px;
-    height:auto;
-    display: block;
-    text-align: center;
-    background-color: lightgray;
-
+.itemProductDetail {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: lightgray;
+  border: 5px solid #dfdfc3;
 }
 
 .itemProduct ul {
-    text-align: center;
-    background-color: lightgray;
-    
+  text-align: center;
+  background-color: lightgray;
 }
 .itemProduct li {
-margin-top: 5px;
+  margin-top: 2px;
 }
 
-.itemProduct p 
-{
-    font-size: 15px;
-
-}
-
-.counter {
-    
+.itemProduct p {
+  font-size: 25px;
 }

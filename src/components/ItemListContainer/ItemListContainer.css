@@ -1,6 +1,14 @@
+.itemList ul li {
+  float: left;
+  display: inline;
+}
 
-
-.itemList ul li{ 
-float:left;
-display: inline;
+.itemList {
+  width: 22.5%;
+  height: auto;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: lightgray;
+  border: 5px solid #dfdfc3;
 }

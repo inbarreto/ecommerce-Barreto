@@ -8,7 +8,7 @@ export const ItemDetailContainer = (props) => {
 
   useEffect(() => {
     getItem();
-  }, []);
+  }, [updatePants]);
 
   const getItem = () => {
     const task = new Promise((resolve, reject) => {
@@ -25,7 +25,7 @@ export const ItemDetailContainer = (props) => {
               Id: 1,
               Price: 120,
               Item: "Wranglers",
-              Description: "Lose",
+              Description: "Lose fit",
               Imagen:
                 "https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face,q_auto,w_auto:100:702/v1/i/613846fc_009d.jpg",
               Stock: 1,
@@ -62,17 +62,17 @@ export const ItemDetailContainer = (props) => {
             },
           ]);
         },
-        (err) => { }
+        (err) => {}
       )
-      .catch((err) => { })
-      .finally((err) => {
-
-      });
+      .catch((err) => {})
+      .finally((err) => {});
   };
 
   return (
     <>
-      <ItemDetail itemProduct={listPants != null ? listPants[0] : null}> </ItemDetail>
+      <ItemDetail itemProduct={listPants != null ? listPants[0] : null}>
+        {" "}
+      </ItemDetail>
     </>
   );
 };

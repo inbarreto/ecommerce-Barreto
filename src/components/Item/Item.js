@@ -1,4 +1,3 @@
-import { ItemCount } from "../ItemCount/ItemCount";
 import "./Item.css";
 
 export const Item = (props) => {
