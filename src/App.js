@@ -29,7 +29,6 @@ function App() {
           <Route exact path="/">
             <div className="App">
               <ItemListContainer greeting="" />
-              <button onClick={switchDarkMode}>TESTING</button>
             </div>
           </Route>
           <Route exact path="/Detail">
