@@ -1,0 +1,34 @@
+[
+    {
+      "Id": 1,
+      "Price": 120,
+      "Item": "Wranglers",
+      "Description": "Lose fit",
+      "Imagen": "https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face,q_auto,w_auto:100:702/v1/i/613846fc_009d.jpg",
+      "Stock": 1
+    },
+    {
+      "Id": 2,
+      "Price": 340,
+      "Item": "Lacoste",
+      "Description": "Fit",
+      "Imagen": "https://images.asos-media.com/products/nike-city-made-pack-woven-cargo-pants-in-black/21456879-1-black?$n_640w$&wid=513&fit=constrain",
+      "Stock": 13
+    },
+    {
+        "Id": 4,
+        "Price": 200,
+        "Item": "Vans",
+        "Description": "Fit",
+        "Imagen": "https://images.asos-media.com/products/nike-city-made-pack-woven-cargo-pants-in-black/21456879-1-black?$n_640w$&wid=513&fit=constrain",
+        "Stock": 5
+      },
+      {
+        "Id": 4,
+        "Price": 120,
+        "Item": "Levis",
+        "Description": "Fit",
+        "Imagen": "https://images.asos-media.com/products/nike-city-made-pack-woven-cargo-pants-in-black/21456879-1-black?$n_640w$&wid=513&fit=constrain",
+        "Stock": 7
+      }
+  ]
