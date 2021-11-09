@@ -2,7 +2,7 @@ import { ItemCount } from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 export const ItemDetail = (props) => {
   if (props == null) return;
-  console.log(props);
+
   return (
     <div className="itemProductDetail">
       <span>{<img src={props?.itemProduct?.Imagen} alt="product"></img>}</span>

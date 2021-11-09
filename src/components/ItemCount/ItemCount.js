@@ -6,7 +6,6 @@ export const ItemCount = (props) => {
   const [buttonAdd, changeButtonAdd] = useState(false);
   const [buttonRest, changeButtonRest] = useState(false);
   useEffect(() => {
-    console.log(counter + itemsToAdd);
     changeButtonAdd(counter + itemsToAdd > props.stock ? true : false);
     changeButtonRest(counter > 0 ? false : true);
   }, [counter, itemsToAdd]);

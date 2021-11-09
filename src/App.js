@@ -31,7 +31,7 @@ function App() {
               <ItemListContainer greeting="" />
             </div>
           </Route>
-          <Route exact path="/Detail">
+          <Route exact path="/Detail/:itemId">
             <ItemDetailContainer />
           </Route>
         </Switch>
