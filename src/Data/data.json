@@ -1,0 +1,74 @@
+[
+    {
+      "Id": 1,
+      "CategoryId":1,
+      "Price": 120,
+      "Item": "Wranglers",
+      "Description": "Lose fit",
+      "Imagen": "https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face,q_auto,w_auto:100:702/v1/i/613846fc_009d.jpg",
+      "Stock": 1
+    },
+    {
+      "Id": 2,
+      "Price": 340,
+      "CategoryId":1,
+      "Item": "Lacoste",
+      "Description": "Fit",
+      "Imagen": "https://images.asos-media.com/products/nike-city-made-pack-woven-cargo-pants-in-black/21456879-1-black?$n_640w$&wid=513&fit=constrain",
+      "Stock": 13
+    },
+    {
+        "Id": 4,
+        "Price": 200,
+        "CategoryId":1,
+        "Item": "Vans",
+        "Description": "Fit",
+        "Imagen": "https://jerone.com/images/10948_Mark-Pants-L32-Only-&-Sons_0209-walk.jpg",
+        "Stock": 5
+      },
+      {
+        "Id": 5,
+        "Price": 120,
+        "CategoryId":1,
+        "Item": "Levis",
+        "Description": "Fit",
+        "Imagen": "https://img1.theiconic.com.au/yVGTllr1b3PRAm1mO7vRimK5l8g=/634x811/filters:quality(95):fill(ffffff)/http%3A%2F%2Fstatic.theiconic.com.au%2Fp%2Fmarks-spencer-9645-8712621-1.jpg",
+        "Stock": 7
+      },
+      {
+        "Id": 6,
+        "Price": 110,
+        "CategoryId":2,
+        "Item": "Nike",
+        "Description": "Lose",
+        "Imagen": "https://assets.kogan.com/files/IT_hardware_products/NIK-BQ3204-002-8-1.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753",
+        "Stock": 1
+      },
+      {
+        "Id": 7,
+        "Price": 120,
+        "CategoryId":2,
+        "Item": "Adidas",
+        "Description": "Fit",
+        "Imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/168bdd9ab43041158653a800001d546a_9366/Seeley_Shoes_Black_F37427_01_standard.jpg",
+        "Stock": 1
+      },
+      {
+          "Id": 8,
+          "Price": 120,
+          "CategoryId":2,
+          "Item": "V & S",
+          "Description": "Fit",
+          "Imagen": "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_03_T03_9207_Y0_X_EC_90?$Intl_PDP_Tab$",
+          "Stock": 1
+        },
+        {
+          "Id": 9,
+          "Price": 120,
+          "CategoryId":2,
+          "Item": "Puma",
+          "Description": "Fit",
+          "Imagen": "https://www.styletread.com.au/media/catalog/product/cache/e4b2edc1e9142ecd98073c87223c5ed7/P/M/PM10049BCZSM_2.jpg",
+          "Stock": 1
+        }
+  ]

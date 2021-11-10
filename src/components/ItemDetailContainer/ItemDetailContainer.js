@@ -1,11 +1,10 @@
 import "./ItemDetailContainer.css";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useState, useEffect } from "react";
-import Pants from "./../../Data/pants.json";
+import dataJson from "./../../Data/data.json";
 import { useParams } from "react-router";
 export const ItemDetailContainer = (props) => {
-  const [listPants, setPants] = useState(null);
-  const [listShoes, setShoes] = useState(null);
+  const [listData, setData] = useState(null);
 
   const { itemId } = useParams();
 
@@ -15,18 +14,18 @@ export const ItemDetailContainer = (props) => {
     });
 
   useEffect(() => {
-    getItem(Pants)
-      .then((res) => setPants(res))
+    getItem(dataJson)
+      .then((res) => setData(res))
       .catch((err) => console.log(err));
   });
-
+  console.log(itemId);
   return (
     <>
       <ItemDetail
         itemProduct={
-          listPants != null
-            ? listPants?.find((item) => Number(item.Id) === Number(itemId))
-            : null
+          listData
+            ? listData?.find((item) => Number(item.Id) === Number(itemId))
+            : listData
         }
       >
         {" "}

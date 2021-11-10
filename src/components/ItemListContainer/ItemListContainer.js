@@ -1,25 +1,20 @@
 import { ItemList } from "../ItemList/ItemList";
 import "./ItemListContainer.css";
 import { useState, useEffect } from "react";
-import Pants from "./../../Data/pants.json";
-import Shoes from "./../../Data/shoes.json";
-
+import dataJson from "./../../Data/data.json";
+import { useParams } from "react-router";
 export const ItemListContainer = (props) => {
-  const [listPants, setPants] = useState(null);
-  const [listShoes, setShoes] = useState(null);
+  const [listData, setData] = useState(null);
 
+  const { categoryId } = useParams();
+  console.log(categoryId);
   useEffect(() => {
-    getData(Pants)
+    getData(dataJson)
       .then((res) => {
-        setPants(res);
-      })
-      .then((res) => {
-        getData(Shoes).then((res) => {
-          setShoes(res);
-        });
+        setData(res);
       })
       .catch((err) => console.log(err));
-  }, [setPants, setShoes]);
+  }, [listData]);
 
   const getData = (data) =>
     new Promise((resolve, reject) => {
@@ -27,15 +22,21 @@ export const ItemListContainer = (props) => {
         resolve(data);
       }, 2000);
     });
+  console.log(listData);
 
   return (
     <div className="itemList">
       <span>{props.greeting}</span>
       <ul>
-        <ItemList itemProduct={listPants} />
-      </ul>
-      <ul>
-        <ItemList itemProduct={listShoes} />
+        <ItemList
+          itemProduct={
+            listData && categoryId
+              ? listData?.filter(
+                  (item) => Number(item.CategoryId) === Number(categoryId)
+                )
+              : listData
+          }
+        />
       </ul>
     </div>
   );

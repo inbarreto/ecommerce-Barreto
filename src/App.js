@@ -28,11 +28,14 @@ function App() {
         <Switch>
           <Route exact path="/">
             <div className="App">
-              <ItemListContainer greeting="" />
+              <ItemListContainer greeting="Listado de todos los productos" />
             </div>
           </Route>
-          <Route exact path="/Detail/:itemId">
+          <Route exact path="/item/:itemId">
             <ItemDetailContainer />
+          </Route>
+          <Route exact path="/category/:categoryId">
+            <ItemListContainer />
           </Route>
         </Switch>
       </BrowserRouter>

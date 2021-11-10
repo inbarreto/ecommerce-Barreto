@@ -1,0 +1,5 @@
+ [
+    { "Id": 2, "Description": "Zapatillas" },
+    { "Id": 1, "Description": "Pantalones" },
+    { "Id": 3, "Description": "Buzos" }
+  ]
