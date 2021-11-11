@@ -3,12 +3,12 @@ import "./ItemCount.css";
 export const ItemCount = (props) => {
   const [counter, setCounter] = useState(0);
   const [itemsToAdd, setItemsToAdd] = useState(props.initial | 1);
-  const [buttonAdd, changeButtonAdd] = useState(false);
-  const [buttonRest, changeButtonRest] = useState(false);
+  const [buttonAdd, setButtonAdd] = useState(false);
+  const [buttonRest, setButtonRest] = useState(false);
   useEffect(() => {
-    changeButtonAdd(counter + itemsToAdd > props.stock ? true : false);
-    changeButtonRest(counter > 0 ? false : true);
-  }, [counter, itemsToAdd]);
+    setButtonAdd(counter + itemsToAdd > props.stock ? true : false);
+    setButtonRest(counter > 0 ? false : true);
+  }, [counter, itemsToAdd, props.stock]);
 
   const add = () => {
     setCounter(counter + itemsToAdd);
