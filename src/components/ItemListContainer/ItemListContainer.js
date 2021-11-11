@@ -22,7 +22,6 @@ export const ItemListContainer = (props) => {
         resolve(data);
       }, 2000);
     });
-  console.log(listData);
 
   return (
     <div className="itemList">

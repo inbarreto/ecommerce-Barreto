@@ -1,22 +1,19 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
-export const ItemDetail = (props) => {
-  if (props == null) return;
-
+export const ItemDetail = ({
+  itemProduct: { Imagen, Item, Description, Price, Stock },
+}) => {
   return (
     <div className="itemProductDetail">
-      <span>{<img src={props?.itemProduct?.Imagen} alt="product"></img>}</span>
+      <span>{<img src={Imagen} alt="product"></img>}</span>
       <p>
-        <b>{props?.itemProduct?.Item}</b>
+        <b>{Item}</b>
       </p>
 
-      <p> {props?.itemProduct?.Description}</p>
-      <p> {props?.itemProduct?.Price} $</p>
+      <p> {Description}</p>
+      <p> {Price} $</p>
       <span>
-        <ItemCount
-          name={props?.itemProduct?.Description}
-          stock={props?.itemProduct?.Stock}
-        />
+        <ItemCount name={Description} stock={Stock} />
       </span>
     </div>
   );
