@@ -21,15 +21,17 @@ export const ItemDetailContainer = (props) => {
   console.log(itemId);
   return (
     <>
-      <ItemDetail
-        itemProduct={
-          listData
-            ? listData?.find((item) => Number(item.Id) === Number(itemId))
-            : listData
-        }
-      >
-        {" "}
-      </ItemDetail>
+      {listData && (
+        <ItemDetail
+          itemProduct={
+            listData
+              ? listData?.find((item) => Number(item.Id) === Number(itemId))
+              : listData
+          }
+        >
+          {" "}
+        </ItemDetail>
+      )}
     </>
   );
 };
