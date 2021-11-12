@@ -1,7 +1,6 @@
 .itemName div {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
-  width: 50px;
 }
 
 .itemName button {
@@ -31,4 +30,14 @@ input {
   width: 50px;
   height: 25px;
   font-size: 25px;
+}
+
+.btnComprar {
+  width: 100%;
+  margin: auto;
+}
+.btnComprar button {
+  width: auto;
+  margin-top: 7px;
+  padding: auto;
 }

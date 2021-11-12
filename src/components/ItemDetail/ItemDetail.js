@@ -1,7 +1,9 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
+import React from "react";
+
 export const ItemDetail = ({
-  itemProduct: { Imagen, Item, Description, Price, Stock },
+  itemProduct: { Id, Imagen, Item, Description, Price, Stock },
 }) => {
   return (
     <div className="itemProductDetail">
@@ -13,7 +15,7 @@ export const ItemDetail = ({
       <p> {Description}</p>
       <p> {Price} $</p>
       <span>
-        <ItemCount name={Description} stock={Stock} />
+        <ItemCount itemProduct={{ Id, Stock, Description, Price }} />
       </span>
     </div>
   );
