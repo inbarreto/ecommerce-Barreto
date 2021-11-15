@@ -5,8 +5,19 @@ export const CartContext = ({ defaultValues = [], children }) => {
   const [cart, setCart] = useState(defaultValues);
   //console.log(defaultValues);
   const addItem = (obj) => {
-    setCart([...cart, obj]);
     console.log(cart);
+
+    const item = cart?.map((item) => item.Id).indexOf(obj.Id);
+    console.log(item);
+    //console.log(cart);
+    if (item !== null && item !== -1) {
+      const updatedItem = { ...cart[item] }; //cart.indexOf((item) => Number(item.Id) == Number(obj.Id));
+
+      updatedItem.Stock = obj.Stock - obj.counter;
+      cart[item] = updatedItem;
+    } else {
+      setCart([...cart, obj]);
+    }
   };
 
   const removeItem = (id) => {

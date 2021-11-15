@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import logo from "./../../logo.svg";
 import { CartWidget } from "./../../components/CartWidget/CartWIdget";
 import Categories from "./../../Data/categories.json";
-
+import { Context } from "./../../Context/CartContext";
+import { useContext } from "react";
 export const NavBar = () => {
-  console.log(Categories);
+  const cartContext = useContext(Context);
+  console.log(cartContext.cart);
   return (
     <div className="NavBar">
       <ul>
@@ -29,7 +31,7 @@ export const NavBar = () => {
           <h3>Sport-Commerce</h3>
         </li>
         <li className="rightli">
-          <CartWidget text="5" />
+          <CartWidget text={cartContext.cart.length} />
         </li>
       </ul>
     </div>

@@ -17,7 +17,7 @@ export const ItemDetailContainer = (props) => {
     getItem(dataJson)
       .then((res) => setData(res))
       .catch((err) => console.log(err));
-  });
+  }, []);
   console.log(itemId);
   return (
     <>

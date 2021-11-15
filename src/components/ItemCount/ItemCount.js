@@ -25,8 +25,11 @@ export const ItemCount = ({
     setItemsToAdd(value);
   };
   const addProduct = () => {
-    console.log(Id, Price, counter);
     cartContext.addItem({ Id, Price, counter, Stock });
+  };
+
+  const clearProducts = () => {
+    cartContext.clear();
   };
 
   const rest = () => setCounter(counter - 1);
@@ -56,7 +59,11 @@ export const ItemCount = ({
         +
       </button>
       <div className="btnComprar">
-        <button onClick={addProduct}> COMPRAR </button>
+        <button onClick={addProduct} disabled={buttonRest}>
+          {" "}
+          COMPRAR{" "}
+        </button>
+        <button onClick={clearProducts}> Borrar Carrito </button>
       </div>
     </div>
   );
